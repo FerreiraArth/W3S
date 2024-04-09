@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="ExternalCSS/body.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="ExternalCSS/divs.css">
+
+    <style>
+        table, th, td {
+            border:1px solid #8a2be2;
+        }
+    </style>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block And Inline</title>
+</head>
+<body>
+    
+    <h1>HTML Block and Inline Elements</h1>
+
+<p>Every HTML element has a default display value, depending on what type of element it is.</p>
+
+<p>There are two display value: Block and inline.</p>
+
+<h2>Block-level Elements</h2>
+
+<p>A Block-Level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.</p>
+
+<p>A block-level element always takes up the full width available(stretches out to the left and right as far as it can). Two commonly used block elements are: <code class="mask">&lt;p&gt;</code> and <code class="mask">&lt;div&gt;</code>.</p>
+
+<p>Here are the block-level elements in HTML:</p>
+
+<img src="images/block-level.png" alt="block-level">
+
+<h2>Inline Elements</h2>
+
+<p>An inline element does not start on a new line. An inline element only takes up as much width as necessary.</p>
+
+<p>Here are the inline elements in HTML:</p>
+
+<img src="images/Inline.png" alt="Inline">
+
+<p class="note
+"><strong>NOTE</strong>: An inline element cannot contain a block-level element!</p>
+
+<h2>The &lt;div&gt; ELement</h2>
+
+<p>The <code class="mask">&lt;div&gt;</code> element is often used as a container for other HTML elements. The <code class="mask">&lt;div&gt;</code> element has no required attributes , but <code class="mask">style</code>, <code class="mask">class</code> and <code class="mask">id</code> are common. When used together with CSS, the <code class="mask">&lt;div&gt;</code> element can be used to style blocks of content:</p>
+
+<div style="
+background-color: aliceblue;
+color: black;
+padding: 20px;
+margin: 50px;">
+    <h2 style="
+    text-align: center;"
+    >DIV</h2>
+    
+    <p>The &lt;div&gt; tag is used as a container for HTML elements - Which is then styled with CSS or manipuleted with JavaScript.</p>
+</div>
+
+<h2>The &lt;span&gt; Element</h2>
+
+<p>The <code class="mask">&lt;span&gt;</code> is an inline container used to mark up a part of text, or a part of a document. The <code class="mask">&lt;span&gt;</code> element has no required attribute, but <code class="mask">style</code>, <code class="mask">class</code> and <code class="mask">id</code> are common.  When used together with CSS, the <code class="mask">&lt;span&gt;</code> element can be used to style blocks of content:</p>
+
+<div style="
+background-color: rgb(145, 255, 0);
+color: black;
+padding: 20px;
+margin: 50px;">
+    <h2 style="
+    text-align: center;"
+    >SPAN</h2>
+    
+    <p>The &lt;span&gt; tag is much like the &lt;div&gt; element, but &lt;div&gt; is a <span 
+        style="background-color: red;"
+        title="This is a span element inside a paragraph." >block-level</span> element and &lt;span&gt; is an inline element.</p>
+</div>
+
+<h2 class="summ">CHAPTER SUMMARY</h2>
+
+<ul>
+    <li>There are two display values: block and inline</li>
+    <li>A block-level element always start on a new line and take up the full width available</li>
+    <li>An inline element does not start on a new line and takes up as much width as necessary</li>
+    <li>The <a href="https://www.w3schools.com/tags/tag_div.asp" target="_blank">&lt;div&gt;</a> element is a block-level and is often used as a container for other HTML elements</li>
+    <li>The <a href="https://www.w3schools.com/tags/tag_span.asp" target="_blank">&lt;span&gt</a>; element is an inline container used to mark up a part of a text, or a part of a document</li>
+</ul>
+
+<div class="next"><a href="P11Class.html">Next page</a></div>
+
+</body>
+</html>

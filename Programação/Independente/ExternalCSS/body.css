@@ -1,0 +1,101 @@
+body {
+    background-image: linear-gradient(to bottom right, black, #3f007a
+    );
+    color: aliceblue;
+    font-size: larger;
+    counter-reset: section;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    text-shadow:  2px 2px 4px #ffffff;
+    counter-reset: subsection;
+} /*remove 4px*/
+h1::before {
+    counter-increment: section;
+    content: "Section " counter(section) ". ";
+}
+h2::before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";
+}
+
+code {
+    color: rgb(0, 255, 42); background-color: #892be24f ;
+}
+
+article {
+    background-color: rgb(4, 0, 34);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 25px;
+}
+aside {
+    background-color: rgb(4, 0, 34);
+    margin-right: 2%;
+    border: 2px solid white;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: auto;
+    float: right;
+}
+
+a:link {
+    color: rgb(0, 255, 42);
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited { 
+    color: aqua ;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active{
+    color: greenyellow ;
+    background-color: transparent;
+    text-decoration: underline;
+} 
+
+
+a.nex:link, a.nex:visited{
+    color: black;
+    float: right;
+    background-color: #8a2be2;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    margin: 2px;
+}
+a.nex:hover{
+    background-color: #892be24f;
+    color: white;
+}
+a.nex:active{
+    background-color: red;
+    color: white;
+}
+
+::selection{
+    color: black;
+    background-color: #8a2be2;
+}
+
+section {
+    background-color: var(--blue);
+    border: 2px solid var(--frostedbluec);
+    border-radius: 25px;
+    padding: 25px;
+    margin: 25px;
+    box-shadow: 5px 5px 10px 5px var(--frostedbluem);
+
+}
+.colorcoment {
+    color: var(--frostedbluem);
+}

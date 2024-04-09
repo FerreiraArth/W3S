@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="ExternalCSS/body.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="ExternalCSS/divs.css">
+
+    <style>
+        table, th, td {
+            border:1px solid #8a2be2;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    
+    <h1>HTML Tables</h1>
+
+<p>The HTML tables allow Web developers to arrange data into rows and colomns. Being composed of, &lt;th&gt;(table head), &lt;tr&gt;(table rows), &lt;td&gt;(table datas).
+</p>
+
+<p>By default, the text in &lt;th&gt; elements are bold and centered, but you can change that with CSS.</p>
+
+<h2>Table Cells</h2>
+
+<p>Each table cells is defined by a &lt;td&gt; and &lt;/td&gt;</p>
+
+
+<table style="width:100%">
+    <tr>
+        <td>Cars</td>
+        <td>Motocycles</td>
+        <td>Boats</td>
+    </tr>
+</table>
+
+<p><strong>Note</strong>:A table Cell can contain all sorts of HTML elements: text, images, lists, links, other tables, etc.</p>
+
+<p>You can have as many rows as you like in a table; just make sure that the number of cells are the same in each row.</p>
+
+<p><strong>Note</strong>: There are times when a row can have less or more cells than another. You learn about that in a lather chapter.</p>
+
+<h2>Table Hearders</h2>
+
+<p>Sometimes you want your cells to be table hearder cells. In those cases use the &lt;th&gt; tag instead of the &lt;td&gt; tag:</p>
+
+<table style="width:100%">
+    <tr>
+        <th>Cars</th>
+        <th>Motocycles</th>
+        <th>Boats</th>
+    </tr>
+    <tr>
+        <td>Lancer</td>
+        <td>Harley</td>
+        <td>S.S.Moss</td>
+    </tr>
+    <tr>
+        <td>lamborghini</td>
+        <td>MT-03</td>
+        <td>L.Ink</td>
+    </tr>
+    
+</table>
+
+<h2>HTML Table Borders</h2>
+
+<p>HTML tables can have borders of different style and shapes.</p>
+
+<h3> How to add a border </h3>
+
+<p>When you add a border to a table, you also add borders around each table cell.</p>
+<p>To add a border, use the CSS border property on table, th, and td elements, justy like the example above.</p>
+
+<h2>Collapsed table borders</h2>
+
+<p>To avoid having double borders, like in the example above. set the CSS border-collapse property to collapse. This will make the border collapse into a single border:</p>
+
+<table style="
+border: solid #8a2be2;
+
+border-collapse: collapse;
+
+width: 100%;">
+
+<tr>
+    <th>Cars</th>
+    <th>Motocycles</th>
+    <th>Boats</th>
+</tr>
+<tr>
+    <td>Lancer</td>
+    <td>Harley</td>
+    <td>S.S.Moss</td>
+</tr>
+<tr>
+    <td>lamborghini</td>
+    <td>MT-03</td>
+    <td>L.Ink</td>
+</tr>
+
+</table>
+
+<h2>Round Table Borders</h2>
+
+<p>With the border-radius property, the borders get rounded corners:</p>
+
+<table style="
+border:  3px solid #8a2be2;
+
+border-radius: 15px;
+
+width: 100%;
+
+background-color: rgb(0, 0, 0);
+
+color: rgb(255, 0, 0);
+
+">
+
+
+<tr>
+    <th>Cars</th>
+    <th>Motocycles</th>
+    <th>Boats</th>
+</tr>
+
+<tr>
+    <td>Lancer</td>
+    <td>Harley</td>
+    <td>S.S.Moss</td>
+</tr>
+
+<tr>
+    <td>lamborghini</td>
+    <td>MT-03</td>
+    <td>L.Ink</td>
+</tr>
+
+</table>
+
+<p><strong>TIP</strong>: If you set a background color of each cell, and give the border a white color(the same as the document background), you get the impression od an invisible border.</p>
+
+<p><strong>TIP2</strong>: Skip the border around the table by leveing out <strong style="color: rgb(0, 255, 42);
+background-color: #892be24f;">table</strong> from the CSS selector.</p>
+
+<h2>Dotted Table Borders</h2>
+
+<p>With the border-style property, tou can set the appearance of the border.</p>
+
+<table style="
+border: solid #8a2be2;
+
+border-style: groove;
+
+width: 100%;
+
+
+">
+
+<tr>
+    <th>Cars</th>
+    <th>Motocycles</th>
+    <th>Boats</th>
+</tr>
+<tr>
+    <td>Lancer</td>
+    <td>Harley</td>
+    <td>S.S.Moss</td>
+</tr>
+<tr>
+    <td>lamborghini</td>
+    <td>MT-03</td>
+    <td>L.Ink</td>
+</tr>
+
+</table>
+
+<p>The fallowing values are allowed:</p>
+
+<ul>
+    <li>
+        <div class="mask">
+            
+            dotted
+        
+        </div>
+    
+    </li>
+
+    <li div class="mask">
+    
+        dashed
+
+    </li>
+
+    <li>solid</li>
+    <li>double</li>
+    <li>groove</li>
+    <li>ridge</li>
+    <li>inset</li>
+    <li>outset</li>
+    <li>none</li>
+    <li>hidden</li>
+
+</ul>
+
+<h2>HTML Table Size</h2>
+
+<p>Use the <strong class="mask">style</strong> attribute with the <strong class="mask">width</strong> or <strong class="mask">heigth</strong> properties to specify the size of a table, row or column.</p> 
+
+<table style="
+border: solid #8a2be2;
+
+width: 100%;
+
+
+">
+
+<tr 
+
+style="height: 50px;">
+
+    <th style="width: 50%;">
+
+        Cars
+    
+    </th>
+    <th>Motocycles</th>
+    <th>Boats</th>
+</tr>
+<tr>
+    <td>Lancer</td>
+    <td>Harley</td>
+    <td>S.S.Moss</td>
+</tr>
+<tr>
+    <td>lamborghini</td>
+    <td>MT-03</td>
+    <td>L.Ink</td>
+</tr>
+
+</table>
+
+<h2>Table Hearders</h2>
+
+<p>HTML tables can have headers for each column or rom, or for many columns/rows.</p>
+
+<h3>Header for Multiple Columns, and Table Caption</h3>
+
+<p>You can have a hearder that span over two or more columns. To do this, use the <strong class="mask">colspan</strong> attribute on the <strong class="mask">&lt;th&gt;</strong> element:</p>
+
+<p>You can add a caption that serves as a heading for the entire table.</p>
+
+<table style="
+border: solid #8a2be2;
+
+border-style: inset;
+
+width: 100%;
+
+">
+
+<caption>University and Courses</caption>
+
+<tr>
+    <th 
+    colspan="2">
+
+    Course
+
+</th>
+
+    <th>University</th>
+</tr>
+<tr>
+    <td>Alura</td>
+    <td>Kenze</td>
+    <td>Anhanguera</td>
+</tr>
+<tr>
+    <td>W3S</td>
+    <td>Udemy</td>
+    <td>USP</td>
+</tr>
+
+</table>
+
+<h2>HTML Table Padding & Spacing</h2>
+
+<p>HTML tables can adjust the padding inside the cells, and also the space between the cells.</p>
+
+<table
+style="
+
+width: 100%;
+
+padding: 15px;">
+
+<caption>
+
+    With Padding
+
+</caption>
+    <tr>
+        <th  style=" padding: 15px;">With padding</th>
+        <th>With padding</th>
+        <th>With padding</th>
+    </tr>
+    <tr>
+        <td style=" padding: 15px;">With padding</td>
+        <td>With padding</td>
+        <td>With padding</td>
+    </tr>
+    <tr>
+        <td style=" padding: 15px;">With padding</td>
+        <td>With padding</td>
+        <td>With padding</td>
+    </tr>
+</table>
+
+<br>
+
+<table
+style="
+
+width: 100%;
+border-spacing: 25px;">
+    <caption>With Spacing</caption>
+
+    <tr>
+        <th>With spacing</th>
+        <th>With spacing</th>
+        <th>With spacing</th>
+    </tr>
+    <tr>
+        <td>With spacing</td>
+        <td>With spacing</td>
+        <td>With spacing</td>
+    </tr>
+    <tr>
+        <td>With spacing</td>
+        <td>With spacing</td>
+        <td>With spacing</td>
+    </tr>
+
+</table>
+
+<p><strong>TIP</strong>: To add padding only above the content, use the <strong class="mask">padding-top</strong> property. And the others sides with the <strong class="mask">padding-bottom</strong>, <strong class="mask">padding-left</strong>, and <strong class="mask">padding-right</strong> properties.
+</p>
+
+<h2>HTML Table Colspan & Rowspan</h2>
+
+<p>HTML tables can have cells that span over multiple rows and/ or columns.</p>
+
+
+<table style="
+
+width: 100%;">
+
+    <caption>COLSPAN</caption>
+
+    <tr>
+        <th colspan="2"
+        >NAME:</th>
+        <th>HARRY</th>
+    </tr>
+    <tr>
+        <td>NONE</td>
+        <td>NONE</td>
+        <td>NONE</td>
+    </tr>
+    <tr>
+        <td>NONE</td>
+        <td>NONE</td>
+        <td>NONE</td>
+    </tr>
+</table>
+
+<br>
+
+<table style="
+
+width: 100%;">
+
+    <caption>ROWSPAN</caption>
+
+    <tr>
+        <td>NOME:</td>
+        <th>Harry</th>
+    </tr>
+    <tr>
+        <td rowspan="2">PHONE:</td>
+        <td>555-2424</td>
+    </tr>
+    <tr>
+        <td>555-8742</td>
+    </tr>
+</table>
+
+<br>
+
+<h2>Zebra Stripes - horizontal</h2>
+
+<p>If you add a background color on every other table row, you will get a nice zebra stripes effect.</p>
+
+<p>To style every other table row element, use the <strong class="mask">:nth-child(even)</strong> selector like this:</p>
+
+<p><strong>Note</strong>: If you use (odd) instead of (even), the styling will occur on row 1, 3, 5 etc. instead of 2, 4, 6 etc.</p>
+
+<h2>Zebra Stripes - Vertical</h2>
+
+<p>To make vertical zera stripes, style every other column, instead of every other row.</p>
+
+<p>Set the <strong class="mask">:ntd-child(even)</strong> for table data elements.</p>
+
+<p><strong>Note</strong>: Put the <strong class="mask">:ntd-child()</strong> selector on both <strong class="mask">th</strong> and <strong class="mask">td</strong> elements if you want ti have the styling on both headers and regular table cells.</p>
+
+<h2>Combine Vertical and Horizontal Zebra Stripes</h2>
+
+<p>You can combine the styling from the two examples above and you will have stripes on every other row and every other column.</p>
+
+<p><strong>TIP</strong>: If you use a tranparent color you will get an overlapping effect. Use the <strong class="mask">rgba()</strong> color to specify the tranparency of the color.</p>
+
+<img src="images/2023-03-12.png" alt="combine the styling">
+
+<h2>Horizontal Dividers</h2>
+
+<p>Just add the <strong class="mask">border-bottom</strong> property to all <strong class="mask">tr</strong> elements to get horizontal dividers.</p>
+
+<h2>Hoverable Table</h2>
+
+<p>Use the <strong class="mask">:hover</strong> selector on <strong class="mask">tr</strong> to highlight table rows on mouse over.</p>
+
+<h2>Colgroup</h2>
+
+<p>If you want to style the columns of a table, use the <strong class="mask">&lt;colgroup&gt;</strong> and <strong class="mask">&lt;col&gt;</strong> elements. If you want to style more columns with different styles, use more <strong class="mask">&lt;col&gt;</strong> elements. <br>
+You can also add empty col elements before the columns you want to style. You can hide columns with the <code class="mask">visibility: collapse</code> property:</p>
+
+<table style="
+
+    width: 100%;">
+    
+        <caption>NONE NONE</caption>
+
+        <colgroup>
+        <col span="1" 
+        style="background-color: rgba(255, 0, 0, 0.342);">
+
+        <!--<col span="2"
+        style="visibility: collapse;">-->
+
+        <col span="2"
+        style="background-color: rgba(0, 0, 255, 0.616);">
+
+        </colgroup>
+    
+        <tr>
+            <th>NONE</th>
+            <th>NONE</th>
+            <th>NONE</th>
+        </tr>
+        <tr>
+            <td>NONE</td>
+            <td>NONE</td>
+            <td>NONE</td>
+        </tr>
+        <tr>
+            <td>NONE</td>
+            <td>NONE</td>
+            <td>NONE</td>
+        </tr>
+    </table>
+
+    <p style="
+    text-align: center;
+    ">For more click on the <a href="https://www.w3schools.com/html/html_tables.asp" target="_blank">HTML Table</a>.</p>
+
+<!--<table style="
+
+width: 100%;">
+
+    <caption>NONE NONE</caption>
+
+    <tr>
+        <th>NONE</th>
+        <th>NONE</th>
+        <th>NONE</th>
+    </tr>
+    <tr>
+        <td>NONE</td>
+        <td>NONE</td>
+        <td>NONE</td>
+    </tr>
+    <tr>
+        <td>NONE</td>
+        <td>NONE</td>
+        <td>NONE</td>
+    </tr>
+</table>-->
+
+<div class="next"><a href="P9Lists.html">Next page</a></div>
+
+</body>
+</html>

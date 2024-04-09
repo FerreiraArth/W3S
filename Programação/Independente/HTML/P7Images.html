@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="ExternalCSS/body.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="ExternalCSS/divs.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+</head>
+<body>
+    <h1>HTML Images</h1>
+
+<h3>Image Maps</h3>
+
+<p>With HTML image maps, you can create clickable areas on an image.</p>
+
+<p>The HTML &lt;map&gt;tag defines an image maps. An image map is an image with clickable areas. The areas are definied with one or more &lt;area&gt; tags.</p>
+
+<p>Click on any item below:</p>
+
+<img src="images/clothes.jpg" alt="clothes" style="height:400px; width:400px;"
+usemap="#clothes">
+
+<map name="clothes">
+
+    <area shape="rect"
+    
+    coords="186,36,360,341"
+
+href="https://www.amazon.com.br/UbdehL-Jaqueta-masculina-corta-vento-casual/dp/B096PBK9C7/ref=asc_df_B096PBK9C7/?tag=googleshopp00-20&linkCode=df0&hvadid=506441837217&hvpos=&hvnetw=g&hvrand=6717863429637947811&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001572&hvtargid=pla-1545916511752&psc=1" alt="blouse" target="_blank">
+
+<area shape="rect" coords="166,98,183,190" href="https://www.amazon.com.br/Apple-Watch-SE-Smartwatch-meia-noite-alum%C3%ADnio-esportiva/dp/B0BDJFXMLV/ref=asc_df_B0BDJFXMLV/?tag=googleshopp00-20&linkCode=df0&hvadid=630348228695&hvpos=&hvnetw=g&hvrand=12846017795856170173&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001572&hvtargid=pla-1902282644536&psc=1" alt="watch" target="_blank">
+
+<area shape="rect" coords="17,155,159,336" href="https://www.amazon.com.br/Chelsea-Masculina-Conforto-Resistente-Preto/dp/B0B8BKY3RW/ref=asc_df_B0B8BKY3RW/?tag=googleshopp00-20&linkCode=df0&hvadid=608438222396&hvpos=&hvnetw=g&hvrand=4946490405696565652&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001572&hvtargid=pla-1741019105983&psc=1" alt="boots" target="_blank">
+
+</map>
+
+<h2> How does it work?</h2>
+
+<p>The idea behind an image map is that you should be able to perform different actions depending on where in the image you click. </p>
+
+<p>To creat an image map you need an image, and some HTML code that describes the clickable areas.</p>
+
+<p>The only different from other images is that you must add a usemap attribute.</p>
+
+<p>The usemap value start with a hash tag# followed by the name of the image map, and is used to create a relationship between the image and the image map.</p>
+
+<h2>Create Image Map</h2>
+
+<p>The &lt;map&gt; element is used to create an image map, and is linked to the image by using the required name attribute. The name attribute must have the same value as the &lt;img&gt;'s usemap attribute.</p>
+
+<h3>The areas</h3>
+
+<p>Then, add the clickable areas. A clickable area is defined using an &lt;area&gt; element.</p>
+
+<h3>Shapes</h3>
+
+<p>You must define the shape of the clickable area, and you can choose one of these values:</p>
+
+<ul>
+    <li>rect - defines a rectancgular region</li>
+    <li>cicle - defines a circular region</li>
+    <li>poly - defines a polygonal region</li>
+    <li>default - defines the entire region</li>
+</ul>
+
+<p>You must also define some coordinates to be able to place the clickable area onto the image.</p>
+
+<h2>Image map and JavaScript</h2>
+
+<p>a clickable area can also trigger a JavaScript function.</p>
+
+<p>Add a click event to the &lt;area&gt; element to execute a JavaScript function:</p>
+
+<img src="images/clothes.jpg" alt="ClothesJS" usemap="#CJS"
+width="400px" height="400px">
+
+<map name="CJS">
+    <area shape="rect" coords="186,36,360,341" href="https://www.amazon.com.br/UbdehL-Jaqueta-masculina-corta-vento-casual/dp/B096PBK9C7/ref=asc_df_B096PBK9C7/?tag=googleshopp00-20&linkCode=df0&hvadid=506441837217&hvpos=&hvnetw=g&hvrand=6717863429637947811&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001572&hvtargid=pla-1545916511752&psc=1" alt="Jacket" target="_blank"
+    onclick="myFunction()">
+</map>
+
+<script>
+    function myFunction(){alert("You clicked in the Jacket")}
+</script>
+
+<h2 style="text-align: center;
+border: 2px solid rgb(0, 255, 149);
+padding: 10px;
+margin: 50px;">CHAPTER SUMMARY</h2>
+
+<ul>
+    <li>Use the HTML &lt;img&gt; element to define an image</li>
+    <li>Use the HTML src attribute to define the URL of the image</li>
+    <li>Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed</li>
+    <li>Use the HTML width and height attributes or the CSS width and height properties to define the size of the image</li>
+    <li>Use the  <a href="https://www.w3schools.com/css/css_float.asp" target="_blank">CSS float</a> property to let the image float to the left or to the right</li>
+    <li>Use the HTML &lt;map&gt; element to define an image map</li>
+    <li>Use the HTML &lt;area&gt; element to define the clickable areas in the image map</li>
+    <li>Use the HTML usemap attribute of the &lt;img&gt; element to point to an image map</li>
+
+</ul>
+
+<h2>HTML Background Images</h2>
+
+<p style="background-image: url(100+\ Frases\ de\ Friedrich\ Nietzsche\ para\ Conocer\ su\ Filosofía.jpg) ;">To add a background image on the HTML element, use the HTML style attribute and the CSS background-image property</p>
+
+<p>You can also specify the background image in the &lt;style&gt; element, in the &lt;head&gt; section</p>
+
+<p>If you can the entire page to have a background image, you must specify the background image on the &lt;body&gt; element</p>
+
+<p style= "background-image: url(download.jpg);
+background-repeat: no-repeat;">If background image is smaller than the element, the image will repeat itself, horizontally and vertically, until it reaches the end of the element. To avaid the background image from repeating itself, set the background-image property to no-repeat.</p>
+
+<h2>Background Cover</h2>
+
+<p>If you want the background image to cover the entire element, you can set the background-size property to cover. </p> 
+<p>Also, to make sure the entire element is always covered, set the background-attachment property to fixed.</p> <p>This way, the background image will cover the entire element, with no stretching (the image will keep its original proportions):</p>
+
+<img style="width: 541px; height: 190px;" 
+src="images/imagebg.png" alt="Background image">
+
+<h2>Background Stretch</h2>
+
+<p>If you want the background image to stretch to fit the entire element, you can set the background-size property to 100% 100%(background-size: 100% 100%;)</p>
+
+<p>To learn more about <a href="https://www.w3schools.com/css/css_background.asp" target="_blank">CSS background</a> properties.</p>
+
+<h2>HTML &lt;picture&gt; Element</h2>
+
+<p>The HTML &lt;picture&gt; element gives web developers more flexibility in specifying image resources.</p>
+
+<p>The &lt;picture&gt; element contains one or more &lt;source&gt; elements, each rederring to different images through the srcset attribute. This way the  browser can choose the image that best fits the current view and/or device.</p>
+
+<p>Each &lt;source&gt; element has a media attribute that define when the image is the most suitable.</p>
+
+<p>Show different images for different screen sizes:</p>
+
+<picture>
+
+    <source media="(max-width: 750px)" srcset="images/foto-p.png">
+
+    <source media="(max-width: 1050px)" srcset="images/foto-m.png">
+   
+   <img src="images/foto-g.png" alt="g">
+
+</picture>
+
+<p>NOTE: Always specify an &lt;img&gt; element as the last child element of the &lt;picture&gt; element. The &lt;img&gt; element is used by browsers that do not support the &lt;picture&gt; element, or if none of the &lt;source&gt; tags match.
+</p>
+
+<p style="text-align: center;">To understand more watch Gustavo's <a href="https://www.youtube.com/watch?v=cAgkwPWE4hU&t=492s" target="_blank">Youtube Video</a>.</p>
+
+<h1>HTML Favicon</h1>
+
+<h3>Favicon</h3>
+
+<p>A favicon is a small image displayed nest to the page title in the browser tab.</p>
+
+<h3>How to add?</h3>
+
+<p>To add the favicon you need a simple image with high contrast. <br>
+Add a <a href="https://www.w3schools.com/tags/tag_link.asp" target="_blank">&lt;link&gt;</a> element to your "index.html" file, after the &lt;title&gt; element. The example can be seen in the head area.</p>
+
+<div class="next"><a href="P8Tables.html">Next page</a></div>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="ExternalCSS/body.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="ExternalCSS/divs.css">
+
+    <link rel="stylesheet" href="ExternalCSS/grid.css">
+
+    <style>
+        table, th, td {
+            border:1px solid #8a2be2;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders</title>
+</head>
+<body>
+
+    <h1>CSS Borders</h1>
+
+    <h2>Borders - Individual Sides</h2>
+
+    <p>In CSS, there are also properties for specifying each of the borders (top, rigth, bottom, and left):</p>
+
+    
+    <div class="codebarex">
+        <h2>Example:</h2>
+
+        <pre class="codebar">
+            p {
+                border-top-style: dotted;
+                border-right-style: solid;
+                border-bottom-style: dotted;
+                border-left-style: solid;"
+            }
+        </pre>
+
+        <h2>Result:</h2>
+
+        <div class="codebar">
+            
+            <p style="
+            border-top-style: dotted;
+            border-right-style: solid;
+            border-bottom-style: dotted;
+            border-left-style: solid;"
+            >Different borders styles</p>
+        </div>
+
+    </div>
+
+    <p>So, here is how it works:</p>
+
+    <ul>
+        <li>If it has four values: <code class="mask">border-style: dotted solid double dashed;</code></li>
+
+        <li>If it has three values: <code class="mask">border-style: dotted solid double;</code></li>
+
+        <li>If it has two values: <code class="mask">border-style: dotted solid;</code></li>
+        
+        <li>If it has one values: <code class="mask">border-style: dotted;</code></li>
+    </ul>
+
+<h2>Border Shorthand</h2>
+
+<aside>
+    There is outline, learn more aboult in <a href="https://www.w3schools.com/css/css_outline_offset.asp" target="_blank">CSS Outline</a>.
+</aside>
+
+<p>The <code class="mask">border</code> property is a shorthand property for the following individual border properties:</p>
+
+<ul>
+    <li><code class="mask">border-with</code></li>
+
+    <li><code class="mask">border-style</code>(required)</li>
+
+    <li><code class="mask">border-color</code></li>
+</ul>
+
+
+    <div class="next"><a href="P3Text.html">Next page</a></div>
+    
+</body>
+</html>

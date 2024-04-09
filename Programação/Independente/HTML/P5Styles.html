@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="ExternalCSS/body.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="ExternalCSS/divs.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styles</title>
+</head>
+<body>
+    <h1 style="text-align: center;">HTML Styles - CSS</h1>
+
+    <p>CSS stards for Cascading Style Sheets. It can control the layout of multiple web pages all at once.</p>
+
+    <h2>Whats is CSS?</h2>
+    
+    <p><abbr title="Cascading Style Sheets">CSS</abbr> is used to format yhe layout of a webpages.</p>
+
+    <p>With CSS you can control the color, font, the size of text, the spacing between elements, how elements are positioned and laid out, what background imagens or background color are to be used, different displays for different devices and screen sizes, and much more!</p>
+
+    <p>TIP: the word Cascading means that a style applied to a parents elemts will also apllied to all children elements within the parent. So, if you set the color of the body text to "blue", all headings, paragraphs, and other text elements, within the body will also get the same color(unless you specify somthing else)!</p>
+
+    <h2>Using CSS</h2>
+
+    <p>CSS can be added to HTML documents in 3 ways:</p>
+
+    <ul>
+        <li><strong>Inline</strong> - by using the style attribute inside HTML elements</li>
+        <li><strong>Internal</strong> - by using a &lt;style&gt; element in the &lt;head&gt; section</li>
+        <li><strong>External</strong> - by using a &lt;link&gt; element to link to an external CSS</li>
+    </ul>
+
+    <p>The most common way to add CSS, is to keep the style in external CSS files. However, in this tutorial we will use inline and internal styles, because this is easier to demonstrate, and easier for to try it yourself.</p>
+
+    <h2>Inline CSS</h2>
+    
+    <p>An Inline CSS, is used to apply a unique style to a single HTML element.</p>
+    
+    <p>An Inline CSS uses the style attribute of a HTML element.</p>
+
+    <p>The following example sets the text color of the &lt;h1&gt; element to green,and the text color of the &lt;p&gt; to a orange:</p>
+
+    <h1 style="color: green;">Wellcome Friend</h1>
+
+    <p style="color: orange
+    ">My name is Prometheus</p>
+
+    <h2>Internal CSS</h2>
+
+    <p>An internal CSS is used to define a style for a single HTML page.</p>
+
+    <p>An Internal CSS is definied in the &lt;head&gt; section of an HTML page, within a &lt;style&gt; element.</p>
+
+    <p>The example is at the beginning of the page in the HTML element. Used to place all h1 elements in the center.</p>
+
+    <h2>External HTML</h2>
+    
+    <p>An External style sheets, is used to define the style for manuy HTML pages.</p>
+    
+    <p>To use an external style sheet, add a link to it in the &lt;head&gt; section of each HTML page:</p>
+
+<img src="images/external-style-sheet.png" alt="External CSS">
+
+<p>The external Style Sheet can be written in any text editor. The file must not contain any HTML code, and must be saved with a .css extension.</p>
+
+<p><strong>TIP</strong>:
+With an external style sheet, you can change the look of an entire web site, by changing one file.</p>
+
+<h2>CSS Border, Padding, Margin.</h2>
+
+<p style=
+ 
+"border: 5px solid #8a2be2;
+padding: 25px ;
+margin: 50px;
+
+text-align: center;
+font-size: large;"
+
+>This paragraph contains Border, Padding, and Margin.</p>
+
+<p>Note: There are 3 ways to link the external Style Sheet. Are they:</p>
+
+<ol>
+    <li>It is used a full URL to link to a style sheet.</li>
+    <li>It is linked to a style sheet located in the HTML folder on the current web site.</li>
+    <li>It is linked to a style sheet located in the same folder as the current page.</li>
+</ol>
+
+<p><strong>TIP</strong>: You can read more about file paths in <a href="https://www.w3schools.com/html/html_filepaths.asp" target="_blank">HTML File Paths</a>.</p>
+
+<h2 style=
+"text-align: center;
+border: 2px solid rgb(0, 255, 149);
+padding: 10px;
+margin: 50px;">CHAPTER SUMMARY</h2>
+
+<ul>
+    <li>Use the HTML style atrribute for inline styling</li>
+    <li>Use the HTML &lt;style&gt; element to define internal CSS</li>
+    <li>Use the &lt;link&gt; element to refer to an external CSS file</li>
+    <li>Use the HTML &lt;head&gt; element to store &lt;style&gt; and &lt;link&gt; elements</li>
+    <li>Use the CSS color property for text colors</li>
+    <li>Use the CSS font-family property for text fonts</li>
+    <li>Use the CSS font-size property for text sizes</li>
+    <li>Use the CSS border property for borders</li>
+    <li>Use the CSS padding property for space incide the border</li>
+    <li>Use the CSS margin property dor space outside the border</li>
+</ul>
+
+<div class="next"><a href="P6Links.html">Next page</a></div>
+
+</body>
+</html>

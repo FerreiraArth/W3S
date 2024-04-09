@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="ExternalCSS/body.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="ExternalCSS/divs.css">
+
+    <style>
+        table, th, td {
+            border:1px solid #8a2be2;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+</head>
+<body>
+    
+    <h1>HTML Lists</h1>
+
+<p>HTML lists allow web developers to group a set of related items in lists.</p>
+
+<table style=" width: 100%;
+">
+<caption>Description of List Tags</caption>
+    <tr >
+        <th style="padding: 5px;">TAG</th>
+        <th> Description</th>
+    </tr>
+    <tr>
+        <td style="padding: 5px;">&lt;ul&gt;</td>
+        <td>Defines an unordered list</td>
+    </tr>
+    <tr>
+        <td style="padding: 5px;">&lt;ol&gt;</td>
+        <td>Defines an ordered list</td>
+    </tr>
+    <tr>
+        <td style="padding: 5px;">&lt;li&gt;</td>
+        <td>Defines a list item</td>
+    </tr>
+    <tr>
+        <td  style="padding: 5px;">&lt;dl&gt;</td>
+        <td>Defines a description list</td>
+    </tr>
+    <tr>
+        <td style="padding: 5px;">&lt;dt&gt;</td>
+        <td>Defines a term in a description list</td>
+    </tr>
+    <tr>
+        <td style="padding: 5px;">&lt;dd&gt;</td>
+        <td>Describes the term in a description list</td>
+    </tr>
+</table>
+
+<h2>List Style Type</h2>
+
+<h3>Unordered List</h3>
+
+<p>By default, the unordered list will be marked with bullets (small black cicle).</p>
+
+<p>The CSS <code class="mask">list-style-type</code> property id used to  define the style of the list item marker. It can have on of the following values for unordered list:</p>
+
+<table style=" width: 100%;
+">
+<caption>Unordered List</caption>
+    <tr >
+        <th style="padding: 5px;">Value</th>
+        <th> Description</th>
+    </tr>
+    <tr>
+        <td style="padding: 5px;">disc</td>
+        <td>Sets the list item marker to a bullet(default)</td>
+    </tr>
+    <tr>
+        <td style="padding: 5px;">circle</td>
+        <td>Sets the list item marker to a cicle</td>
+    </tr>
+    <tr>
+        <td  style="padding: 5px;">square</td>
+        <td>Sets the list item marker to a square</td>
+    </tr>
+    <tr>
+        <td style="padding: 5px;">none</td>
+        <td>The list items will not be marked</td>
+    </tr>
+</table>
+
+<p class="note">
+    <strong>NOTE</strong>: A list item (&lt;li&gt;) can contain a new list, and other HTML element, like images and links, etc.
+</p>
+
+<h2>Horizontal List with CSS</h2>
+
+<p>HTML lists can be styled in many different ways with CSS. One popular way is to style a list horizontally, to create a navigation menu:</p>
+
+<p style=" text-align: center;">
+<a href="pags/exul.html" target="_blank">Click to see example</a></p>
+
+
+<table style=" width: 100%;
+">
+<caption>Ordered List</caption>
+    <tr >
+        <th style="padding: 5px;">Type</th>
+        <th> Description</th>
+    </tr>
+    <tr>
+        <td style="padding: 5px;">Type="1"</td>
+        <td>The list items will be numbered with numbers (default)</td>
+    </tr>
+    <tr>
+        <td style="padding: 5px;">Type="A"</td>
+        <td>The list items will be numbered with uppercase latters</td>
+    </tr>
+    <tr>
+        <td  style="padding: 5px;">Type="a"</td>
+        <td>The list items will be numbered with lowercase letters</td>
+    </tr>
+    <tr>
+        <td style="padding: 5px;">Type="I"</td>
+        <td>The list items will be numbered with uppercase roman number</td>
+    </tr>
+    <tr>
+        <td style="padding: 5px;">Type="i"</td>
+        <td>The list items will be numbered with lowercase roman number</td>
+    </tr>
+</table>
+
+<h2>HTML Description Lists</h2>
+
+<p>A description list is a list of terms, with a description of each term.</p>
+
+<p>The <code class="mask">&lt;dl&gt;</code> tag define the description list, the <code class="mask">&lt;dt&gt;</code> tag define the term(name), and the <code class="mask">&lt;dd&gt;</code> tag describes each term:</p>
+
+<dl style="text-align: center;
+background-color: #e2c62b;
+color: black;">
+    <dt>Alura</dt>
+    <dd>Online Course of Web-developers</dd>
+    <dt>Anhanguera</dt>
+    <dd>Faculty of Web-developers</dd>
+</dl>
+
+<h2 class="summ
+">CHAPTER SUMMARY</h2>
+
+<ul style="list-style-type: square;">
+    <li>Use the HTML <code class="mask">&lt;ul&gt;</code> element to define an unordered list</li>
+    <li>Use the CSS <code class="mask">list-style-type</code> property to define the list item marker</li>
+    <li>Use the <code class="mask">&lt;li&gt;</code> element to define a list item</li>
+    <li>List can be nested</li>
+    <li>List items can contain othe HTML elements</li>
+    <li>Use the CSS property <code class="mask">float:left</code> to display a list horizontally</li>
+    <li>Use the HTML <code class="mask">&lt;ol&gt;</code> element to define an ordered list</li>
+    <li>Use the HTML <code class="mask">type</code> attribute to define the numbering type</li>
+    <li>Use the <code class="mask">&lt;dl&gt; element to define a description list</code></li>
+    <li>Use the <code class="mask">&lt;dt&gt;</code> to define the description term</li>
+    <li>Use the <code class="mask">&lt;dd&gt;</code> to define the term in a description list</li>
+</ul>
+
+<div class="next"><a href="P10BlockInline.html">Next page</a></div>
+
+</body>
+</html>

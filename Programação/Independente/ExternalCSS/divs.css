@@ -1,0 +1,76 @@
+.mask{
+        color: rgb(0, 255, 42); background-color: #892be24f ;
+        
+    }
+    
+.note{
+        text-align: center;
+        color: black;
+        background-color: rgb(0, 255, 234);
+        padding: 10px;
+        margin: 20px;
+        width: fit-content;
+    }
+
+.summ{
+        text-align: center;
+        border: 2px solid rgb(0, 255, 149);
+        padding: 10px;
+        margin: 10px;
+    }
+
+.codebar{
+        border: 2px solid aliceblue;
+        padding: 5px;
+        margin: 10px;
+        background-color: var(--blue);
+        font-size: larger;
+}
+.codebarex{
+        border: 2px solid aliceblue;
+        padding: 15px;
+        margin: 15px;
+        margin-right: 15%;
+        background-color: rgb(23, 3, 41);
+}
+.ex{
+        background-color: var(--blue);
+        border: 2px solid var(--frostedbluecc);
+        border-radius: 1cm;
+        margin: 1cm;
+        padding: 1cm;
+        width: fit-content;
+        box-shadow:10px 1px 25px 1px var(--frostedbluec);
+
+}
+
+.next{
+        background-color: #8a2be2;
+        color: white;
+        border-radius: 1cm;
+        margin: 1cm;
+        padding: 1cm;
+        float: right;
+}
+:root {
+        --purple: #8a2be2;
+        --blue: #000b3b;
+        --green: #00414d;
+        --frostedblueh: #29353c;
+        --frostedbluem: #44576d;
+        --frostedblueg:#768a96;
+        --frostedbluec:#aac7d8;
+        --frostedbluecc:#dfebf6;
+        --frostedgrey:#e6e6e6;
+}
+.exform {
+        background-color: var(--blue);
+        padding: 25px;
+        margin: 10px;
+        border-radius: 1cm;
+        width: fit-content;
+        border: 1px solid #8a2be2;
+        box-shadow:10px 10px 25px 1px var(--green);
+
+}
+

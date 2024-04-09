@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="../ExternalCSS/body.css">
+
+    <link rel="stylesheet" href="../ExternalCSS/ex.css">
+
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../ExternalCSS/divs.css">
+
+    <link rel="stylesheet" href="../ExternalCSS/grid.css">
+
+    <script src="../ExternalCSS/myScript.js"></script>
+
+    <style>
+        table, th, td {
+            border:1px solid var(--frostedbluec);
+            
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Syntax</title>
+</head>
+<body>
+
+    <h1>Statements</h1>
+
+    <p>A computer program is a list of "instruction" to be "executed" by a computer. In programming language, these programming instruction are called <strong>statements</strong>. A <strong>JavaScript program</strong> is a list of programming <strong>statements</strong>.</p>
+
+    <section>
+        <h2>JavaScript keywords</h2>
+        <p>JavaScript statements often start with a <strong>keywords</strong> to identify the JavaScript action to be performed. Our <a href="https://www.w3schools.com/js/js_reserved.asp" target="_blank">Reserved Words Reference</a> list all JavaScript keywords. <br>
+        Here is a list of some of keywords you will learn about in this tutorial:</p>
+        <table width="80%">
+            <tr>
+                <th>Keyword</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>var</td>
+                <td>Declares a variable</td>
+            </tr>
+            <tr>
+                <td>let</td>
+                <td>Declares a block variable</td>
+            </tr>
+            <tr>
+                <td>const</td>
+                <td>Declares a block constant</td>
+            </tr>
+        
+            <tr>
+                <td>if</td>
+                <td>Marks a block of statements to be executed on a condition</td>
+            </tr>
+            <tr>
+                <td>switch</td>
+                <td>Marks a block of statements to be executed in differents cases</td>
+            </tr>
+            <tr>
+                <td>for</td>
+                <td>Marks a block of statements to be executed in a loop</td>
+            </tr>
+            <tr>
+                <td>function</td>
+                <td>Declares a functoin</td>
+            </tr>
+            <tr>
+                <td>return</td>
+                <td>Exits a function</td>
+            </tr>
+            <tr>
+                <td>try</td>
+                <td>Implements error handing to a block of statements</td>
+            </tr>
+        </table>
+        <h2>JavaScript Syntax</h2>
+        <div class="codebarex">
+            <p>JavaScript syntax is the set of rules, how JavaScript programs are constructed:</p>
+            <pre class="codebar" style="font-size: larger;">
+                <span class="colorcoment">// How to create variable:</span>
+                var x;
+                let y;
+                <span class="colorcoment">// How to use variables:</span>
+                x = 5;
+                y = 6;
+                let z = x + y;
+            </pre>
+        
+        </div>
+        <h2>JavaScript Values</h2>
+        <p>The JavaScript syntax defines two types of values:</p>
+        <ul>
+            <li>Fixed values</li>
+            <li>Variable values</li>
+        </ul>
+        <p>Fixed values are called <strong>Literals</strong>. <br>
+        Variable values are called <strong>Variables</strong>.</p>
+        <h2>JavaScript Literals</h2>
+        <p>The 2 most important syntax rules for fixed values are:</p>
+        <ol type="I">
+            <li><strong>Numbers</strong> are written with or without decimals.</li>
+            <li><strong>String</strong> are text, written within double or single quotes.</li>
+        </ol>
+        
+        <h2>JavaScript Variables</h2>
+        <p>In a programing language, <strong>variables</strong> are used to store data values. <br>
+            JavaScript uses the keywords <code>var</code>, <code>let</code>, and <code>const</code> to <strong>declare</strong> variables. <br>
+        An <strong>equal sign</strong> is used to <strong>assign values</strong> to variables.</p>
+        <aside>
+            <h3>When to use var, let, or const?</h3>
+            
+            <ol type="I">
+                <li>Always declare variables</li>
+                <li>Always use <code>const</code> if the value should not be changed</li>
+                <li>Always use <code>const</code> if the <strong title=" (Arrays and objects)">type</strong> should not be changed</li>
+                <li>Only use <code>let</code> if you can't use <code>const</code></li>
+                <li>Only yse <code>var</code> if you MUST support old browsers</li>
+            </ol>
+        </aside>
+        <div>
+            <h3>Variables are Containers for Storing Data</h3>
+            <p>JavaScript Variables can be declared in 4 ways:</p>
+            <ul>
+                <li>Automatically</li>
+                <li>using <code>var</code></li>
+                <li>using <code>let</code></li>
+                <li>using <code>const</code></li>
+            </ul>
+        </div>
+    </section>
+    
+    <h1>JavaScript Function</h1>
+    
+    <p>A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invoked it (call it).</p>
+
+    <aside><p>Why Functions? <br>
+    With functions you can reuse code. You can write code that can be used many times. <br>You can use the same code with different arguments, to produce different results.</p></aside>
+    
+    <section>
+        <h2>JavaScript Function Syntax</h2>
+        
+        
+        <p>A JavaScript Syntax is defined with the <code>function</code> keyword, followed by a <strong>name</strong> followed by parentheses <strong title="The parenthes may include parameter names separated by commas">( )</strong>. <br>
+            The code to be executed, by the function, is placed inside curly brackets.</p>
+            
+            <div class="codebarex">
+                <pre class="codebar">
+                    function name(parameter1, parameter2...) {
+                        <div class="colorcoment"
+                        style="text-align: center;"
+                        >//code to be executed</div>
+                    }
+                </pre>
+            </div>
+            
+            <h2>Function Invocation</h2>
+            
+            <p>The code inside the function will execute when "something" <strong>invokes</strong>(calls) the function:</p>
+            
+            <ul>
+                <li>When an event occurs(when a user clicks a button)</li>
+                <li>When it is invoked (celled) from JavaScript code</li>
+                <li>Automatically (self invoked)</li>
+            </ul>
+    </section>
+
+    <h1>JavaScript Objects</h1>
+
+    <p>In real life, a car is an object. A car has <strong>properties</strong> like weight and color, and <strong>methods</strong> like start and stop.</p>
+
+    <section>
+
+        <h2>Object Definition</h2>
+
+        <p>You define (and create) a JavaScript object with an object literal:</p>
+
+        <div class="codebarex">
+            <pre class="codebar">
+                const person = {
+                    firstName: "John",
+                    lastName: "Doe",
+                    age: 50,
+                    eyeColor: "blue"
+                };
+            </pre>
+        </div>
+        
+        <h2>Accessing Object properties</h2>
+
+        <p>You can access object properties in two ways:</p>
+
+        <div class="codebarex">
+            <div class="codebar" style="font-style: italic;">objectName.propertyName 
+            <br>
+            <br>
+            objectName["propertyName"]</div>
+        </div>
+
+        <h2>HTML Templates</h2>
+
+        <div class="codebarex">
+
+            <p id="demo"></p>
+
+        </div>
+
+        <script>
+            let header = "Templates Literals"
+            let tags = ["templates literals", "javascript", "es6"]
+
+            let html = `<h3>${header}</h3><ul>`;
+
+                for (const x of tags) {
+                    html += `<li>${x}</li>`;
+                }
+                html += `</ul>`
+
+                document.getElementById("demo").innerHTML = html;
+        </script>
+    </section>
+
+    <div class="next"><a href="p3Operator.html">Next page</a></div>
+    
+</body>
+</html>

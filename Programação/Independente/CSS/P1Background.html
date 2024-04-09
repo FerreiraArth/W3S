@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="ExternalCSS/body.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="ExternalCSS/divs.css">
+
+    <link rel="stylesheet" href="ExternalCSS/grid.css">
+
+    <style>
+        table, th, td {
+            border:1px solid #8a2be2;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background</title>
+</head>
+<body>
+
+    <h1>CSS Background</h1>
+
+    <h2>Background Repeat</h2>
+
+    <p>By default, the <code class="mask">background-image</code> property repeats an image both horizontally and vertically.</p>
+
+    <p>To avoid this use <code class="mask">background-repeat</code>:</p>
+
+    <div class="codebarex">
+        <h2>Example</h2>
+        <h3>To repeat an image horizontally:</h3>
+        <pre class="codebar">
+            body {
+                background-image: url("gradient_bg.png");
+                background-repeat: repeat-x;
+            }
+        </pre>
+
+        <h3>To repeat an image vertically:</h3>
+        <pre class="codebar">
+            body {
+                background-image: url("gradient_bg.png");
+                background-repeat: repeat-y;
+            }
+        </pre>
+
+        <h3>Show the background image only once:</h3>
+        <pre class="codebar">
+            body {
+                background-image: url("gradient_bg.png");
+                background-repeat: no-repeat;
+            }
+        </pre>
+
+        <h3>Position the background image in the top-right corner:</h3>
+        <pre class="codebar">
+            body {
+                background-image: url("gradient_bg.png");
+                background-repeat: no-repeat;
+                background-position: right top;
+            }
+        </pre>
+
+    </div>
+
+<br>
+
+    
+    <h2>Background Attachment</h2>
+
+    <p>The <code class="mask">background-attachment</code> property specifies whether the background image should scroll or fixed (will not scroll with the rest of the page)</p>
+    
+    <div class="codebarex">
+        <h2>Example</h2>
+        <h3>Scroll:</h3>
+        <pre class="codebar">
+            bachground-attachment: scroll;
+        </pre>
+
+        <h3>NOT scroll:</h3>
+        <pre class="codebar">
+            background-attachment: fixed;
+        </pre>
+    </div>
+
+    <h2>CSS Background - Shorthand property</h2>
+
+    <p>To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.</p>
+
+    <pre class="codebar"> body {
+        background: #ffffff url("img_tree.png") no-repeat right top;
+    }</pre>
+
+    <p>When using the shorthand property the order of the property values is:</p>
+
+    <ul>
+        <li><code class="mask">background-color</code></li>
+        <li><code class="mask
+            ">background-image</code></li>
+        <li><code class="mask
+            ">background-repeat</code></li>
+        <li><code class="mask
+            ">background-attachment</code></li>
+        <li><code class="mask
+            ">background-position</code></li>
+    </ul>
+    
+    <div class="next"><a href="P2Borders.html">Next page</a></div>
+</body>
+</html>

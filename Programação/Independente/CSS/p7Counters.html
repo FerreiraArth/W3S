@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="ExternalCSS/body.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="ExternalCSS/divs.css">
+
+    <link rel="stylesheet" href="ExternalCSS/grid.css">
+
+    <link rel="stylesheet" href="ExternalCSS/ex.css">
+
+    <style>
+        table, th, td {
+            border:1px solid #8a2be2;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counters</title>
+</head>
+<body>
+
+    <h1>CSS Counters</h1>
+
+    <h2>Automatic Numbering With Counters</h2>
+
+    <p>CSS counters are like "variables". The variable values can be incremented by CSS rules (Which will track how many times they are used).</p>
+
+    <p>To work with CSS counters we will use the following properties:</p>
+    
+    <ul>
+        <li><code class="mask">
+            counter-reset
+        </code> - Creates or resets a counter</li>
+        <li><code class="mask">
+            counter-increment
+        </code> - Increments a counter value </li>
+        <li><code class="mask">
+            counter
+        </code> - Inserts generated content</li>
+        <li><code class="mask">
+            counter()
+        </code> or 
+    <code class="mask">
+        counters()
+    </code> fuction - Adds the value of a counter to an element</li>
+    </ul>
+
+    <p>To use the CSS counter it must first be created with 
+        <code class="mask">counter-reset</code>.
+    </p>
+
+    <h2>Counter in outlined list</h2>
+
+    <p>A counter can also be useful to make outlined lists because a new instance of a counter is automatically created in child elements. Here use the <code>counters()</code> function to insert a string between different levels of nested counters:</p>
+
+    <div class="codebarex">
+        <h3>Example</h3>
+        <div class="codebar">
+            <pre>
+                ol {
+                    counter-reset: section;
+                    list-style-type: none;
+                }
+
+                li::before {
+                    counter-increment :section;
+                    content: counters(section, ".") " ";
+                }
+            </pre>
+        </div>
+    </div>
+
+    <div class="next"><a href="">Next page</a></div>
+    
+</body>
+</html>

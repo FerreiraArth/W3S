@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="ExternalCSS/body.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="ExternalCSS/divs.css">
+
+    <style>
+        table, th, td {
+            border:1px solid #8a2be2;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>HTML JavaScript</h1>
+
+<p>JavaScript makes HTML pages more dynamic and interactive.</p>
+
+<p>The HTML <code class="mask">&lt;script&gt;</code> tag is used to define a client-side script(JavaScript). <br>
+
+The <code class="mask">&lt;script&gt;</code> element either contaisn script statements, or it points to an external script file throungh the <code class="mask">src</code> attribute. <br>
+
+Commona uses for JavaScript are image manipulation, form validation, and dynamic changes of content. <br>
+
+To select an HTML element, JavaScript most often uses the <code class="mask">document.getElementById()</code> method.</p>
+
+<p>The exemple below writes "Hello JavaScript!" into an HTML element with id="demo"</p>
+
+<p style="text-align: center;
+background-color: aquamarine;
+color: black;
+margin-left: 35%;
+margin-right: 35%;
+border-style: dotted;
+border-radius: 45%;" 
+
+id="demo"></p>
+
+<script>
+    document.getElementById("demo").innerHTML = "Hello JavaScript!"
+</script>
+
+<p class="note"><strong>TIP</strong>: You can learn much more about JavaScript in
+     <a href="https://www.w3schools.com/js/default.asp" target="_blank"
+    style="background-color: rgb(0, 4, 255);">
+        JavaScript Tutorial</a>.
+    </p>
+
+
+<h3> The HTML &lt;noscript&gt; Tag</h3>
+
+<p>The HTML <code class="mask">&lt;noscript&gt;</code> tag define an alternate content to be displayed to users that have disabled scripts in their browser or have a browser that doesn't support script.</p>
+
+<div class="next"><a href="P15HeadElements.html">Next page</a></div>
+
+</body>
+</html>

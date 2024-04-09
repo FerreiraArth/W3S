@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="ExternalCSS/body.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="ExternalCSS/divs.css">
+
+    <link rel="stylesheet" href="ExternalCSS/grid.css">
+
+    <style>
+        table, th, td {
+            border:1px solid #8a2be2;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Code</title>
+</head>
+<body>
+
+    <h1>HTML Computer Code Elements</h1>
+
+    <p>HTML contains several elements for defining user input and computer code.</p>
+
+    <h2>HTML &lt;kbd&gt; For Keybord Input</h2>
+
+    <p>The HTML <code class="mask">
+        &lt;kbd&gt;</code> elements is used to define keyboard input. The content inside is displayed in the browsers's default monospace font.</p>
+    
+    <div class="codebarex">
+        <h2>Example</h2>
+
+        <h3>Define some text as keyboard input in a document:</h3>
+
+        <p class="codebar">Save the document by pressing <code class="mask">&lt;kbd&gt;</code>Ctrl + S<code class="mask">&lt;/kbd&gt;</code></p>
+        
+        <h3>Result:</h3>
+
+        <p class="codebar">Save the document by pressing <kbd>Ctrl + S</kbd></p>
+
+
+    </div>
+
+    <h2>HTML &lt;samp&gt; For program output</h2>
+
+    <p>The HTML <code class="mask">&lt;samp&gt;</code> element is used to define the sample output from a computer program. The content inside is displayed in the browser's default monospace font.</p>
+
+    <div class="codebarex">
+        <h2>Example</h2>
+        <h3>Define some text as sample output from a computer program in a document</h3>
+        
+        <p class="codebar">&lt;p&gt; Message from my computer:&lt;/p&gt; <br>
+        &lt;p&gt;&lt;samp&gt;File not found.&lt;br&gt;Press F1 to continue&lt;/samp&gt;&lt;/p&gt;</p>
+
+        <h3>Result:</h3>
+        <div class="codebar">
+            <p>Message from my computer:</p>
+
+            <p><samp>File not found. <br> Press F1 to continue</samp></p>
+        </div>
+    </div>
+
+    <h2>HTML <code class="mask">&lt;code&gt;</code> For Computer Code</h2>
+
+    <p>The HTML <code class="mask">&lt;code&gt;</code> element is used to define a piece of computer code. The content inside is displayed in the browser's default monospace font.</p>
+
+    <p>notice that the <code class="mask">&lt;code&gt;</code> element does not preserve extra whitespace and line-breaks.</p>
+
+    <p>To fix this, you can put the <code class="mask">&lt;code&gt;</code> element inside a <code class="mask">&lt;pre&gt;</code> element:</p>
+
+    <div class="codebarex">
+        <h2>Example</h2>
+        <h3>Define some text as computer code in a document:</h3>
+
+        <pre class="codebar">
+            &lt;pre&gt;
+            &lt;code&gt;
+            x = 5;
+            y = 6;
+            z = x + y;
+            &lt;/pre&gt;
+            &lt;/code&gt;
+        </pre>
+
+        <h3>Result:</h3>
+
+        <pre class="codebar">
+            <code>
+                x = 5;
+                y = 6;
+                z = x + y;
+            </code>
+        </pre>
+    </div>
+
+    <h2 class="summ">CHAPTER SUMMARY</h2>
+
+    <ul>
+        <li>The &lt;kbd&gt; element defines keyboard input</li>
+        <li>The &lt;samp&gt; element defines sample output from a computer program</li>
+        <li>The &lt;code&gt; element defines a piece of computer code</li>
+        <li>The &lt;var&gt; element defines a variable in programming or in a mathematical expression</li>
+        <li>The &lt;pre&gt; element defines preformatted text</li>
+    </ul>
+        
+    <div class="next"><a href="P18Semantic.html">Next page</a></div>
+    
+</body>
+</html>

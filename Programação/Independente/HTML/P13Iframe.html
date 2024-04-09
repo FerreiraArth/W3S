@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="ExternalCSS/body.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="ExternalCSS/divs.css">
+
+    <style>
+        table, th, td {
+            border:1px solid #8a2be2;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>HTML Iframes</h1>
+
+<p>AN HTML Iframe is used to display a web page winthin a web page.</p>
+
+<p>HTML Inframe Sytax</p>
+
+<p>The HTML &lt;inframe&gt; tag specifies an inline frame. An inline frame is used to embed another document within thw current HTML document.</p>
+
+<div style="background-color: rgb(43, 43, 43);
+width: 75%;">
+    <h2
+    style="padding-left: 10px;
+    padding-top: 15px;">Syntax</h2>
+    <p style="text-align: center;
+    background-color: rgb(6, 0, 43);
+    padding: 8px;">
+        &lt;iframe src="url" title="description&gt;"&lt;/inframe&gt;
+    </p>
+</div>
+
+<p class="note
+"><strong>TIP</strong>: It is a good practice to always include a <code>title</code> attribute for the <code>&lt;iframe&gt;</code>. This is used by screen readers to read out what the content of the iframe is.</p>
+
+<h2>Iframe - set Height and Width</h2>
+
+<p>Use the <code class="mask">height</code> and <code class="mask">width</code> attribute to specify the size of the iframe. Or you can add the <code class="mask">style</code> attibute and use the CSS <code class="mask">height</code> and <code class="mask">width</code> properties:</p>
+
+<h2>Iframe - remove the border</h2>
+
+<p>By default, an iframe has a border around it. To remove the border, add the <code class="mask">style</code> attribute and use the CSS <code class="mask">border</code> property.
+<br>
+With CSS you can change the size, style and color of the iframe's border.</p>
+
+<iframe src="pags/iframe.html" style="
+height: 250px; width: 80%;
+border: 8px solid #2e2be2;" frameborder="0"
+title="iframe exemple"
+name="iframe_a"></iframe>
+
+<p> Click to see the <a href="http://127.0.0.1:5500/Independente/pags/index2.html" target="iframe_a">exemple of table</a>.</p>
+
+<h2 class="summ">CHAPTER SUMMARY</h2>
+
+<ul>
+    <li>The HTML <code class="mask">&lt;iframe&gt;</code> tag specifies an inline frame</li>
+    <li>The <code class="mask">src</code>attribute defines the URL of the page to embed</li>
+    <li>Always include a <code class="mask">title</code> attribute(for screen readers)</li>
+    <li>The <code class="mask">height</code> and <code class="mask">width</code> attribute specify the size of the iframe</li>
+    <li>Use <code class="mask">border:none;</code> to remove the border around the iframe</li>
+</ul>
+
+<div class="next"><a href="P14JavaScript.html">Next page</a></div>
+
+</body>
+</html>

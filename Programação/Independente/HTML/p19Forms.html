@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="ExternalCSS/body.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="ExternalCSS/divs.css">
+
+    <link rel="stylesheet" href="ExternalCSS/grid.css">
+
+    <style>
+        table, th, td {
+            border:1px solid #8a2be2;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+
+    <h1>HTML Forms</h1>
+
+    <p>An HTML form is used to collect user input. The user input is most often sent to a server for processing.</p>
+
+    <h2>The &lt;form&gt; and &lt;input&gt; element:</h2>
+
+    <p>The HTML <code class="mask">&lt;form&gt;</code> element is used to create an HTML form for user input. <br>
+    The <code class="mask">&lt;form&gt;</code> element is a container for different types of input element, such as: text filds, checkbox, radio buttons, submit buttons, etc. 
+    <br><br>
+
+    The HTML <code class="mask">&lt;input&gt;</code> element is the most used form element. An <code class="mask">&lt;input&gt;</code> element can be displayed in many ways, depending on the <code class="mask">type</code> attribute:</p>
+
+    <table style="width: 70%;">
+        <tr>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>&lt;input type="text"&gt;</td>
+            <td>Display a single-line text input fild</td>
+        </tr>
+        <tr>
+            <td>&lt;input type="radio"&gt;</td>
+            <td>Displays a radio button (for selecting one of many choices)</td>
+        </tr>
+        <tr>
+            <td>&lt;input type="checkbox"&gt;</td>
+            <td>Display a checkbox (for selecting zer or more of many choices)</td>
+        </tr>
+        <tr>
+            <td>&lt;input type="submit"&gt;</td>
+            <td>Display a submit button (for submitting the form)</td>
+        </tr>
+        <tr>
+            <td>&lt;input type="button"&gt;</td>
+            <td>Display a chickable button</td>
+        </tr>
+    </table>
+
+    <h3>Text Fields</h3>
+
+    <code>
+        <p>The <code>&lt;input type="text"&gt;</code> defines a single-line input field for text input</p>
+    </code>
+
+    <div class="exform">
+        <form action="" autocomplete="on">
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname" name="lname">
+        </form>
+    </div>
+
+    <h3>Radio Buttons</h3>
+
+    <p>Radio buttons let a user select ONE of a limited of choices:</p>
+
+
+    <div class="exform">
+
+        <form action="">
+            <input type="radio" name="fav_language" id="python" value="python">
+            <label for="python">Python</label><br>
+            <input type="radio" name="fav_language" id="javascript" value="javascript">
+            <label for="javascript">JavaScript</label><br>
+            <input type="radio" name="fav_language" id="c#" value="c#">
+            <label for="c#">C#</label>
+        </form>
+
+    </div>
+
+    <h3>Checkbox</h3>
+
+    <p>Checkbox let a user select ZERO or MORE options of a limited number of choices:</p>
+
+    <div class="exform">
+        <form action="">
+            <input type="checkbox" id="task 1" name=" task 1" value="wash">
+            <label for="task 1">Wash the car</label> 
+            <br>
+            <input type="checkbox" id="task 2" name=" task 2" value="clear">
+            <label for="task 2">Clear the room</label> 
+            <br>
+            <input type="checkbox" id="task 3" name=" task 3" value="market">
+            <label for="task 3">Go to the market</label> 
+            <br><br>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+
+    <p class="note">Notice the submit button, it is defines a button for submitting the form data to a form-handler. <br>
+    The form-handler is typically a file on the server with a script for processing input data. <br>
+    The form-handler is specified in the form's <code class="mask" style="background-color: var(--blue);">action</code> attribute.</p>
+
+    <h3>The Method Attribute</h3>
+
+    <p>The <code>method</code> attribute specifies the HTTP method to be used wehn submitting the form data. <br>
+    The form-data can be sent as URL variables &lpar;with <code>mathod="get"</code>&rpar; or as HTTP post trasaction &lpar;with <code>mathod="get"</code>&rpar;. 
+    The default HTTP method when submittingform data is GET.</p>
+
+    <div class="codebarex">
+        <h3>Example</h3>
+        <p>This example uses the GET method when submitting the form data:</p>
+
+        <div class="codebar">
+
+        <p>&lt;form action="/action_page.php" method="get"&gt;</p>
+            
+        </div>
+
+        <h3>Example</h3>
+        <p>This example uses the POST method when submitting the form data:</p>
+        
+        <div class="codebar">
+
+        <p>&lt;form action="/action_page.php" method="post"&gt;</p>
+            
+        </div>
+    </div>
+
+    <p class="note"><strong>Tip</strong>: Always use POST if the form data contains sensitive or personal information!</p>
+
+    <h1>Form Elements</h1>
+
+    <h2>The HTML &lt;form&gt; Elements</h2>
+
+    <p>The HTML <code>&lt;form&gt;</code> element can contain one or more of the following form elements:</p>
+
+    <ul>
+        <li><code>&lt;input&gt;</code></li>
+        <li><code>&lt;label&gt;</code></li>
+        <li><code>&lt;select&gt;</code></li>
+        <li><code>&lt;textarea&gt;</code></li>
+        <li><code>&lt;button&gt;</code></li>
+        <li><code>&lt;fieldset&gt;</code></li>
+        <li><code>&lt;legend&gt;</code></li>
+        <li><code>&lt;datalist&gt;</code></li>
+        <li><code>&lt;output&gt;</code></li>
+        <li><code>&lt;option&gt;</code></li>
+        <li><code>&lt;option&gt;</code></li>
+        <li><code>&lt;optgroup&gt;</code></li>
+    </ul>
+
+    <h2>The &lt;select&gt; element</h2>
+
+    <p>The &lt;select&gt; element defines a drop-down list:</p>
+
+    <div class="exform">
+        <form action="">
+            <label for="cars">Choose a car:</label>
+            <select name="cars" id="cars" size="2"></select>>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+                <option value="mercedes" selected>Mercedes</option>
+            </select>
+        </form>
+    </div>
+
+    <p>The &lt;option&gt; elements defines an option that can be selected. <br>
+    To define a pre-selected option, add the <code>selected</code> attribute to the option. <br>
+    Use the <code>size</code> attribute to specify the number of visible values. <br>
+    </p>
+
+    <h2>The &lt;textarea&gt; Element</h2>
+
+    <p>The <code>textarea</code>element defines a multi-line input field (a text area)</p>
+
+    <div class="exform">
+        <form action="">
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+            <br><br>
+            <input type="submit" name="submit" id="">
+        </form>
+
+        <button type="button" onclick="alert('Hello World!')">Click me</button>
+    </div>
+
+    <h2>The &lt;fieldset&gt; and &lt;legend&gt; Elements</h2>
+
+    <p>The <code>&lt;fieldset&gt;</code> element is used to group related data in a form. <br>
+    The &lt;legend&gt; element defines a caption for the &lt;fieldset&gt; element.</p>
+
+    <div class="exform">
+        <form action="">
+            <fieldset>
+                <legend>Personalia:</legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John">
+                <label for="lname">Last name:</label><br>
+                <input type="text" name="lname" id="lname" value="Doe"> <br><br>
+
+                <input type="submit" value="submit">
+
+            </fieldset>
+        </form>
+    </div>
+
+    <h2>The &lt;datalist&gt; Element</h2>
+
+    <p>The <code>&lt;datalist&gt;</code> element specifies a list of pre-defined options for an &lt;input&gt; element.</p>
+
+    <div class="exform">
+        <form action="">
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="Internet Explorer"></option>
+                <option value="Firefox"></option>
+                <option value="Opera"></option>
+                <option value="Chrome"></option>
+                <option value="Safari"></option>
+            </datalist>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+
+    
+
+
+
+
+    <div class="next"><a href="">Next page</a></div>
+    
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="ExternalCSS/body.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="ExternalCSS/divs.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>HTML Links</h1>
+
+<p>Links are found in nearly all web page. Links allow users to click their way from page to page</p>
+
+<h2>HTML links - Hyperlinks</h2>
+
+<p>HTML links are hyperlinks. You can click on a link and jump to another document. When you move the mouse over a link, the mouse arrow will turn into a little hand.</p>
+
+<p>Note: A link does not have to be text. A link can be an image, or any other HTML element!</p>
+
+<h2>HTML Links - Syntax</h2>
+
+<p>The HTML &lt;a&gt; tag defines a hyperlinl. The most important attribute of the &lt;a&gt; element in the href attribute, white indicates the link's destination. The content inside the &lt;a&gt; is the part that will be visible to the reader. Clicking on the content, will send the reader to the specified URL address, as you can see in the tip.
+</p>
+
+<p><strong>TIP</strong>: Links can of course be styled with <a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS</a>. to get another look!</p>
+
+<h2>HTML Links - The target Attribute</h2>
+
+<p>By default, the linked page will be dsiplayed in the current browser window. To change this, you must specify target for the link.</p>
+
+<p>The target attribute specifies where to open the linked document.</p>
+<p>The target attribute can have one of the following values:</p>
+
+<ul>
+    <li> _self - Default. Opens the document in the same window/tab as it was clicked</li>
+    <li>_blank - Opens the document in a new window or tab</li>
+    <li>_top - Opens the document in the full body of the window</li>
+
+</ul>
+
+<h2>Absolute URLs vs. Relative URLs</h2>
+
+<p>Both examples above are using an <strong>absolute URL</strong>(a full web address) in the href attribute</p>
+
+<p>A local link(a link to a page within the same website) is specified with a <strong>relative URL </strong>(without the "https://www" part)</p>
+
+<h2>HTML links - Use an image as a link</h2>
+
+<p>To use an image as a link, just put the &lt;img&gt; tag inside &lt;a&gt;tag:</p>
+
+<a href="https://www.bing.com/images/search?q=the+devil&qpvt=the+devil&form=IGRE&first=1" target="_blank">
+    <img src="images/imglink.png" alt="the devil">
+</a>
+
+<h2>Link to an Email address</h2>
+
+<p>Use mailto: inside the href attribute to create a link that opens the user's email program(to let them send a new email).</p>
+
+<!--<p><a href="mailto:oszo4dos@gmail.com">Send email</a></p>-->
+
+<h2>Button as a Link</h2>
+
+<p>To use an HTML button as a link, we have to add some JavaScript code. JavaScript allows you to specify what happens at certain events, such as a click of a button.</p>
+
+<p><strong>TIP</strong>: Click the button to learn more about JavaScript.</p>
+
+<a href="https://www.w3schools.com/js/default.asp" target="_blank"><button>JavaScript</button></a>
+
+<h2>Link Titles</h2>
+
+<p>The title attribute specifies extra information about an element. The information is most often shown as a tooltip when the mouses moves over the element.</p>
+
+<p>How to create an <a href="https://www.freecodecamp.org/news/how-to-create-an-html-button-that-acts-like-a-link/" target="_blank" title="Learn to create a button with FCC">HTML button.</a></p>
+
+<h2>More on Absolute URLs vs. Relative URLs</h2>
+
+<h2
+style="
+border: solid 2px rgb(0, 255, 149);
+margin: 50px;
+padding: 10px;
+text-align: center;"
+>CHAPTER SUMMARY</h2>
+
+
+<ul>
+    <li>Use the &lt;a&gt; element to define a link</li>
+    <li>Use the href attribute to define the link address</li>
+    <li>Use the target attribute to defines where to open the linked document</li>
+    <li>Use the &lt;img&gt; element(inside&lt;a&gt;) to use an image as a link</li>
+    <li>Use the mailto: scheme inside the href attribute to create a link that opens the user's email program</li>
+    <li>Use the id attribute (id="value") to define bookmarks in a page</li>
+    <li>Use the href attribute (href="#value") to link to the bookmarks</li>
+</ul>
+
+<h1><strong>COLORS</strong></h1>
+
+<p>By default, a link appear like this(in all browsers):</p>
+
+
+
+<ul>
+        <li>An unvisited link is underlined and blue</li>
+        <li>A visited link is underlined and purple</li>
+        <li>An active link is underlined and red</li>
+</ul>
+
+<p>You can change the link state colors, by using CSS:</p>
+
+<p>Here, an unvisited link will be orenge with no underlined. A visited link will be greenyellow with no underlined. An active link will be auqa and underlined. In addition, when mousing over link (a:hover) it will become red and underlined.</p>
+<p>You can also make a <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_button" target="_blank"> Link Button.</a></p>
+
+<p>For long pages: <a href="https://www.w3schools.com/html/html_links_bookmarks.asp" target="_blank">Bookmarks</a></p>
+
+<p style="text-align: center;
+color: yellow;">The exemple is in the &lt;head&gt;</p>
+
+<div class="next"><a href="P7Images.html">Next page</a></div>
+
+</body>
+</html>
